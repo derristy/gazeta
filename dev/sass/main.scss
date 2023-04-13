@@ -9,6 +9,7 @@
     
     &-text {
         overflow: hidden;
+        width: 100%;
         max-width: 935px;
         margin: 0;
         display: flex; 
@@ -23,8 +24,8 @@
 
         & span {
             white-space: nowrap;
-            transform: translateX(-100%);
-            animation: headline 30s infinite;
+            transform: translateX(0);
+            animation: headline 20s infinite;
         }
     }
 
@@ -55,10 +56,10 @@
 
     @keyframes headline {
         0% {
-            transform: translateX(-100%);
+            transform: translateX(50%);
         }
         100% {
-            transform: translateX(0);
+            transform: translateX(-40%);
         }
     }
 }
