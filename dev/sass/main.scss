@@ -1,0 +1,64 @@
+.headline {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    background: #f3f5f7;
+    position: relative;
+    height: 45px;
+    padding: $padding;
+    
+    &-text {
+        overflow: hidden;
+        max-width: 935px;
+        margin: 0;
+        display: flex; 
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+
+        &:hover span {
+            animation-play-state: paused;
+        }
+
+        & span {
+            white-space: nowrap;
+            transform: translateX(-100%);
+            animation: headline 30s infinite;
+        }
+    }
+
+    &-login {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #363636;
+        padding: 10px 65px 10px 10px;
+        
+        &__btn {
+            font-family: "PF Centro Slab Pro", sans-serif;
+            font-weight: 400;
+            background: none;
+            border: none;
+            color: #fff;
+
+            &:first-of-type::after {
+                content: "|";
+                padding: 0 2px 0 7px;
+            }
+
+            &:hover {
+                text-decoration: underline dotted;
+            }
+        }
+    }
+
+    @keyframes headline {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
