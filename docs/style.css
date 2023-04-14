@@ -31,6 +31,12 @@
 }
 @font-face {
   font-family: "PF Centro Slab Pro";
+  src: url("assets/fonts/PFCentroSlabPro-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PF Centro Slab Pro";
   src: url("assets/fonts/PFCentroSlabPro-Bold.otf") format("opentype");
   font-weight: 700;
   font-display: swap;
@@ -174,6 +180,9 @@
 
 .row {
   --bs-gutter-x: 0 !important;
+}
+.row > * {
+  padding: 10px;
 }
 
 .headline {
@@ -389,5 +398,83 @@
 .first-screen__news-small__stats__comments {
   margin-left: 12px;
   color: #a6a8b9;
+}
+
+.subsrcibe-online {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fafafa;
+  padding: 29px 30px 32px 30px;
+  margin-bottom: 23px;
+}
+.subsrcibe-online__title {
+  flex-basis: 100%;
+  font-family: "PF Centro Slab Pro", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.subsrcibe-online__subtitle {
+  flex-basis: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.subsrcibe-online__btn {
+  flex-basis: 100%;
+  background: #ff2100;
+  border: none;
+  padding: 20px 0;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "PF Centro Slab Pro", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.subsrcibe {
+  border: 1px solid #d3d9dd;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 27px 25px 36px 29px;
+}
+.subsrcibe-title {
+  flex-basis: 100%;
+  margin-bottom: 25px;
+  font-family: "PF Centro Slab Pro", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.subsrcibe-subtitle {
+  flex-basis: 100%;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.subsrcibe-form {
+  display: inline-flex;
+}
+.subsrcibe-btn {
+  background: #1357bc;
+  border: none;
+  width: 48px;
+  height: 45px;
+}
+.subsrcibe-form {
+  flex-basis: 100%;
+}
+.subsrcibe-input {
+  border: none;
+  display: block;
+  padding: 0 0 0 20px;
+  background: #f5f6f8;
+  width: 100%;
+}
+.subsrcibe-input:focus {
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

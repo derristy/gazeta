@@ -256,3 +256,91 @@
         }
     }
 }
+
+.subsrcibe-online {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fafafa;
+    padding: 29px 30px 32px 30px;
+    margin-bottom: 23px;
+
+    &__title {
+        flex-basis: 100%;
+        font-family: "PF Centro Slab Pro", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        flex-basis: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        flex-basis: 100%;
+        background: #ff2100;
+        border: none;
+        padding: 20px 0;
+        border-radius: 10px;
+        color: #fff;
+        font-family: "PF Centro Slab Pro", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+.subsrcibe {
+    border: 1px solid #d3d9dd;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 27px 25px 36px 29px;
+
+    &-title {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+        font-family: "PF Centro Slab Pro", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &-subtitle {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    &-form {
+        display: inline-flex;
+    }
+
+    &-btn {
+        background: #1357bc;
+        border: none;
+        width: 48px;
+        height: 45px;
+    }
+
+    &-form {
+        flex-basis: 100%;
+    }
+
+    &-input {
+        border: none;
+        display: block;
+        padding: 0 0 0 20px;
+        background: #f5f6f8;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

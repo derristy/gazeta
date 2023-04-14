@@ -36,6 +36,13 @@
 
 @font-face {
     font-family: "PF Centro Slab Pro";
+    src: url("assets/fonts/PFCentroSlabPro-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PF Centro Slab Pro";
     src: url("assets/fonts/PFCentroSlabPro-Bold.otf") format("opentype");
     font-weight: 700;
     font-display: swap;
