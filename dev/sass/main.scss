@@ -127,10 +127,131 @@
 
             &__views {
                 margin-left: 10px;
+                color: #a6a8b9;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
             }
 
             &__comments {
                 margin-left: 10px;
+                color: #a6a8b9;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__news {
+        &-big {
+            position: relative;
+            margin-bottom: 24px;
+
+            &__bg {
+                width: 100%;
+            }
+
+            &__label {
+                padding: 25px 25px 34px 22px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: #fafcfe;
+                opacity: 0.8;
+                width: 100%;
+                height: 170px;
+                display: flex;
+                flex-wrap: wrap;
+
+                &-category {
+                    flex-basis: 100%;
+                    color: #ff5a00;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+
+                &-date {
+                    margin-right: auto;
+                    color: #7c7e94;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 13px;
+                }
+
+                &-title {
+                    flex-basis: 100%;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 500;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                &-stats {
+                    &__views {
+                        margin-right: 14px;
+                        color: #7c7e94;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-size: 13px;
+                    }
+
+                    &__comments {
+                        color: #7c7e94;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        &-small {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__img {
+                width: 100%;
+                margin-bottom: 17px;
+            }
+
+            &__category {
+                flex-basis: 100%;
+                color: #ff5a00;
+                text-transform: uppercase;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 12px;
+                margin-bottom: 14px;
+            }
+
+            &__title {
+                flex-basis: 100%;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            &__date {
+                margin-right: auto;
+                color: #a6a8b9;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            &__stats {
+                &__views {
+                    color: #a6a8b9;
+                }
+
+                &__comments {
+                    margin-left: 12px;
+                    color: #a6a8b9;
+                }
             }
         }
     }
