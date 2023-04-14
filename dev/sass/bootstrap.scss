@@ -1,6 +1,12 @@
 .navbar {
     flex-wrap: wrap;
     padding: 0;
+    display: flex;
+    justify-content: center;
+
+    &-toggler {
+        margin-bottom: 20px;
+    }
 
     &-content {
         flex-basis: 100%;
@@ -40,6 +46,11 @@
             font-family: "Roboto", sans-serif;
             font-weight: 300;
             font-size: 13px;
+            transition: color .3s;
+
+            &:hover {
+                color: #88afeb;
+            }
         }
 
         &__select-language {
@@ -63,6 +74,11 @@
 
             & a {
                 color: inherit;
+                transition: color .3s;
+
+                &:hover {
+                    color: #384247;
+                }
             }
         }
 
@@ -75,6 +91,7 @@
             padding-left: 10px;
             height: 37px;
             margin-bottom: 10px;
+            transition: background-color .3s;
 
             &::placeholder {
                 font-family: "PF Centro Slab Pro", sans-serif;
@@ -84,6 +101,10 @@
 
             &:focus {
                 outline: none;
+            }
+
+            &:hover {
+                background-color: rgba(255, 196, 0, 0.199);
             }
         }
     }
@@ -163,6 +184,11 @@
         font-weight: 700;
         font-size: 16px;
         color: #000;
+        transition: color .3s;
+
+        &:hover {
+            color: #706a6a;
+        }
     }
     
     &-item {
