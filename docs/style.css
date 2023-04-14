@@ -56,11 +56,15 @@
   margin: 36px 0 57px 0;
 }
 .navbar-nav {
-  border-top: 1px solid #000;
-  border-bottom: 3px solid #000;
   width: 100%;
   padding-top: 14px !important;
   padding-bottom: 11px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-collapse {
+  border-top: 1px solid #000;
+  border-bottom: 3px solid #000;
 }
 .navbar-search {
   display: flex;
@@ -171,6 +175,10 @@
   font-weight: 300;
   font-size: 14px;
   margin: 0;
+  transition: color 0.1s;
+}
+.navbar-contacts__email a:hover {
+  color: #4282e0;
 }
 
 .nav-link {
@@ -179,9 +187,6 @@
   font-weight: 700;
   font-size: 16px;
   color: #000;
-}
-.nav-item {
-  margin-right: 40px;
 }
 .nav-item:last-child {
   margin-right: 0;

@@ -8,11 +8,16 @@
     }
 
     &-nav {
-        border-top: 1px solid #000;
-        border-bottom: 3px solid #000;
         width: 100%;
         padding-top: 14px !important;
         padding-bottom: 11px !important;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-collapse {
+        border-top: 1px solid #000;
+        border-bottom: 3px solid #000;
     }
 
     &-search {
@@ -112,7 +117,7 @@
     &-contacts {
         display: flex;
         justify-content: center;
-        
+
         &__wrapper {
             max-width: 323px;
         }
@@ -141,6 +146,11 @@
                 font-weight: 300;
                 font-size: 14px;
                 margin: 0;
+                transition: color .1s;
+
+                &:hover {
+                    color: #4282e0;
+                }
             }
         }
     }
@@ -156,8 +166,6 @@
     }
     
     &-item {
-        margin-right: 40px;
-        
         &:last-child {
             margin-right: 0;
         }
