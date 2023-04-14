@@ -63,8 +63,11 @@
 }
 
 .first-screen {
-    display: flex;
     margin-top: 45px;
+
+    & .carousel-inner {
+        padding-top: 20px;
+    }
 
     &__item {
         flex-basis: 26.34%;
@@ -75,6 +78,60 @@
 
         &--second {
             flex-basis: 49.33%;
+        }
+    }
+
+    &__slider {
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #dce4eb;
+            padding-bottom: 10px;
+
+            &__title {
+                font-family: "PF Centro Slab Pro";
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        &-buttons {
+            border: none;
+            background: none;
+            padding: 0;
+        }
+
+        &-news {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            align-items: flex-end;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &__date {
+                flex-basis: 100%;
+                color: #a6a8b9;
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            &__title {
+                font-family: "Roboto", sans-serif;
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+            &__views {
+                margin-left: 10px;
+            }
+
+            &__comments {
+                margin-left: 10px;
+            }
         }
     }
 }

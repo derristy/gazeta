@@ -166,8 +166,8 @@
   margin-right: 0;
 }
 
-.carousel-control-prev, .carousel-control-next {
-  color: #000;
+.row {
+  --bs-gutter-x: 0 !important;
 }
 
 .headline {
@@ -227,8 +227,10 @@
 }
 
 .first-screen {
-  display: flex;
   margin-top: 45px;
+}
+.first-screen .carousel-inner {
+  padding-top: 20px;
 }
 .first-screen__item {
   flex-basis: 26.34%;
@@ -238,5 +240,48 @@
 }
 .first-screen__item--second {
   flex-basis: 49.33%;
+}
+.first-screen__slider-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #dce4eb;
+  padding-bottom: 10px;
+}
+.first-screen__slider-header__title {
+  font-family: "PF Centro Slab Pro";
+  font-weight: 700;
+  font-size: 18px;
+}
+.first-screen__slider-buttons {
+  border: none;
+  background: none;
+  padding: 0;
+}
+.first-screen__slider-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  align-items: flex-end;
+}
+.first-screen__slider-news:last-child {
+  margin-bottom: 0;
+}
+.first-screen__slider-news__date {
+  flex-basis: 100%;
+  color: #a6a8b9;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.first-screen__slider-news__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.first-screen__slider-news__views {
+  margin-left: 10px;
+}
+.first-screen__slider-news__comments {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
